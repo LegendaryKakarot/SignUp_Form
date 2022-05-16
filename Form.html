@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Signup Form</title>
+            <link rel="stylesheet" href="design.css/form_css.css">
+        </head>
+        <body class="body">
+            <form action="/actions.js" class="form">
+                <div class="sign">
+                    <caption>Sign Up</caption>
+                </div>
+                <br><br>
+                <div>
+                    <label for="name" class="styler">Name*</label><br><br>
+                    <div>
+                        <input type="text" placeholder="First Name" class="bord"  required>
+
+                        <input type="text" placeholder="Last Name" class="bord" required>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label for="email" class="styler">Email Address*</label><br><br>
+                    <input type="text" placeholder="example@gmail.com" class="bord" id="input_x" required>
+                </div>
+                <br>
+                <div>
+                    <label for="Password" class="styler">Password*</label><br>
+                    <input type="password" placeholder="" required class="bord"><br>
+                </div>
+                <br>
+                <div>
+                    <label for="Password" class="styler">Confirm Password*</label><br>
+                    <input type="password" placeholder="" required class="bord">
+                </div>
+                <br>
+                <div>
+                    <label for="date" class="styler">Date of Birth*</label><br><br>
+                    <input type="date" placeholder="dd/mm/yyyy" required><br>
+                </div>
+                <br>
+                <div>
+                    <label for="gender" class="styler">Gender*</label><br><br>
+                    <label for="id1">
+                        <input type="radio" value="Male" name="gender" id="id1">Male
+                    </label>
+                    <label for="id2">
+                        <input type="radio" value="Female" name="gender" id="id2">Female
+                    </label>
+                    <label for="id3">
+                        <input type="radio" value="Other" name="gender" id="id3">Other<br>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="language" class="styler">Language Known</label><br><br>
+                    <label for="id4">
+                        <input type="checkbox" value="React" name="language" id="id4">React
+                    </label>
+                    <label for="id5">
+                        <input type="checkbox" value="Angular" name="language" id="id5">Angular
+                    </label>
+                    <label for="id6">
+                        <input type="checkbox" value="Vue" name="language" id="id6">Vue<br>
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="experience" class="styler">Experience Level*</label><br><br>
+                    <select name="experience">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="yourself" class="styler">Tell us something about yourself*</label><br><br>
+                    <textarea name="information" id="101" placeholder="Tell us about yourself" maxlength="200" rows="4" cols="32"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="id7">
+                        <input type="checkbox" value="terms and conditions" name="terms" id="id7" checked="checked">I accept the <span><a href="T&C.com">T&C</span></input>
+                    </label>
+                </div>
+                <br>
+                <div class="pos">
+                    <input type="submit" value="Submit" class="final"><br>
+                </div>
+            <form>
+        </body>
+</html>
